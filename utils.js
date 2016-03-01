@@ -1,7 +1,7 @@
 // Gets live neighbors for a cell
 const getLiveNeighbors = (i, j, board) => {
   let liveNeighbors = 0;
-  const neighbors = [
+  const neighbors   = [
     // If neighbors are outside the board, they are seen as dead cells.
     board[i-1] && (board[i-1][j] === 0 || board[i-1][j] === 1) ? board[i-1][j] : 0,
     board[i+1] && (board[i+1][j] === 0 || board[i+1][j] === 1) ? board[i+1][j] : 0,

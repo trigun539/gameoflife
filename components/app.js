@@ -10,7 +10,7 @@ export class App extends Component {
     const { running, ticks, cells, startTick, stopTick, nextTick } = this.props;
 
     const nextState = calculateNextState(cells);
-    const same = compareStates(cells, nextState);
+    const same      = compareStates(cells, nextState);
 
     if (running && !same) {
       let timeout = setTimeout(() => {
